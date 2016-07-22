@@ -8,7 +8,7 @@ memcached.ojs.intra:
   image: memcached
 
 ojs.intra:
-  image: unusorin/ojs
+  image: sorinbadea/ojs
   env_file: local.ENV
   ports:
     - 4562:80

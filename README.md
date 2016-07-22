@@ -48,7 +48,7 @@ Running the tests :
 
 Integration with docker:
     
-    docker build -t unusorin/ojs .
+    docker build -t sorinbadea/ojs .
     docker-compose up
 
 ## Bugs / Issues
