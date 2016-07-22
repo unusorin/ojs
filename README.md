@@ -46,6 +46,11 @@ Running the tests :
 
     ./lib/pkp/tools/runAllTests.sh -Cc
 
+Integration with docker:
+    
+    docker build -t unusorin/ojs .
+    docker-compose up
+
 ## Bugs / Issues
 
 See https://github.com/pkp/pkp-lib/#issues for information on reporting issues.

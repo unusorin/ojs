@@ -7,3 +7,5 @@ temp
 .buildpath
 .settings
 .DS_Store
+/.docker
+/.idea

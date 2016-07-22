@@ -1,0 +1,19 @@
+db.ojs.intra:
+  image: mysql:5.6
+  volumes:
+    - ./.docker/ojs-mysql-data:/var/lib/mysql
+  env_file: local.ENV
+
+memcached.ojs.intra:
+  image: memcached
+
+ojs.intra:
+  image: unusorin/ojs
+  env_file: local.ENV
+  ports:
+    - 4562:80
+  links:
+    - db.ojs.intra
+    - memcached.ojs.intra
+  volumes:
+    - ./.docker/ojs-files:/opt/files

@@ -1,0 +1,5 @@
+#keeping it clean
+/.git/
+Dockerfile
+.dockerignore
+.docker
